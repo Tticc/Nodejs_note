@@ -1,0 +1,2 @@
+﻿this is the input.txt
+here is the second row

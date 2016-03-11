@@ -1,0 +1,12 @@
+使用nodejs的工具需引入模块:
+  var util = require('util'); 
+  常用工具有：
+    util.inherits(Sub,Base);//其中sub与base皆为function ，且仅只能继承外部方法 如：Base.prototype.xx = function(){}; 则Sub能使用xx方法。调用方法与对象相似，实例化后调用即可。
+    console.log(util.inspect(obj,true));  //输出对象的信息；加参数 true 则是输出详细的信息
+    util.isArray(object); //判断参数是否为数组。
+    util.isRegExp(object);//判断参数是否为正则表达式。
+    util.isDate(object);//判断参数是否为日期
+    
+
+
+    

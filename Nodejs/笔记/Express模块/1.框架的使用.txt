@@ -1,0 +1,17 @@
+//express模块貌似需要本地安装，全局安装不行
+//express_demo.js 文件
+
+var express = require('express');
+var app = express();
+app.get('/', function (req, res) {	//根据get的第一个参数来接收不同的访问，相对路径。
+   res.send('Hello World');		//
+   //res.sendFile('/Nodejs/index.html'); //绝对路径H:/Nodejs/index.html 不能有两个send吗？ 
+});
+app.get('/html',function(req,res){
+    res.sendFile('/Nodejs/index.html');
+});
+var server = app.listen(8888, function () {
+  var host = server.address().address
+  var port = server.address().port
+  console.log("应用实例，访问地址为 http://%s:%s", host, port)
+});
