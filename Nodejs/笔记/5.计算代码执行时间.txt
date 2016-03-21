@@ -1,9 +1,0 @@
-将需要计算执行时间的代码段放于 console.time("相同标记") 和 console.timeEnd("相同标记") 之间即可。
-如：
-  console.info("程序开始执行：");
-  console.time("时间");
-  for(i=0;i<100;i++){
-      var  k=i*i;
-  }
-  console.timeEnd("时间");
-  console.info("程序执行完毕。")
